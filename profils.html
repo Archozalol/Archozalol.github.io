@@ -6,9 +6,6 @@
   	<link rel="SHORTCUT ICON" href="./bildes/favicon.ico"/>
   	<script src="./js/jquery2.1.4.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>
- 	  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  	  <link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?" type="text/css" media="screen" />
-      <script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js"></script>
       <link href = "./css/bootstrap.min.css" rel = "stylesheet">
       <link rel="stylesheet" type="text/css" href="./stils.css">
 
@@ -16,7 +13,13 @@
   
   $(document).ready(function() {
 
-    $("a.fancybox").fancybox();
+    $("#hailait").click(function(){ 
+    	$("#bilde").addClass("highlighted");
+        });
+
+ 	$("#nolait").click(function(){ 
+    	$("#bilde").removeClass("highlighted");
+        });
     });
 </script>
 
@@ -35,7 +38,7 @@
 	 		</button>
 
 	 		<div class = "collapse navbar-collapse navHeaderCollapse">
-	 			<ul class = "nav navbar-nav navbar-right">
+	 			<ul class = "nav navbar-nav navbar-right" id = "myNavbar">
 	 				<li><a href = "./index.html">Sākums</a></li>
             		<li><a href = "./galerija.html">Galerija</a></li>
            			<li><a href = "./kontakti.html">Kontakti</a></li>
@@ -47,51 +50,38 @@
 	 	</div>
 	 </div>
 
-<body>
 
-<div class="container gallery text-center">
-  	<div class="row">
-		<div class="col-md-3">
-			<a class="fancybox" rel="group" href="./bildes/tera.jpg" title="TERA ONLINE">
- 	 		<img src="./bildes/tera.jpg" width="300" height="200" alt="Tera"></a>	 
-		</div>
+<div class = "container">
+	 
+	 	<div class = "jumbotron">
 
-		<div class="col-md-3">
-			<a class="fancybox" rel="group" href="./bildes/bns.jpg" title="BLADE&SOUL ONLINE">
- 	 		<img src="./bildes/bns.jpg" width="300" height="200" alt="BnS"></a>	 
+<div class = "row fonakrasa"> 
+	<div class = "col-md-6">
+		<div class = "caption">
+			<p align = "middle">Niks: Gļota</p>
+			<p align = "middle">E-pasts: (neredzams)</p>
+			<p align = "middle">Dzīvesvieta: Latvija</p>
+			<p align = "middle">Draugi: 0</p>
+			<p align = "middle">Mīļākā spēle: Final Fantasy</p>
 		</div>
+	</div>	
 
-		<div class="col-md-3">
-			<a class="fancybox" rel="group" href="./bildes/gw2.jpg" title="GUILD WARS 2">
- 			<img src="./bildes/gw2.jpg" width="300" height="200" alt="GW2"></a>	 
+	<div class = "col-md-6">
+		<div class = "caption">
+			<p align = "right"><img src = "./bildes/profils.jpg" width = "250px" height = "250px" id = "bilde"> </p>
+			<button type="button" class="btn pull-right btn-primary" id = "hailait">Skaista bilde</button>
+			<button type="button" class="btn pull-right btn-primary" id = "nolait">Neglīta bilde</button>
 		</div>
+	</div>	
 
-		<div class="col-md-3">
-			<a class="fancybox" rel="group" href="./bildes/ffxiv.jpg" title="FINAL FANTASY XIV">
- 	 		<img src="./bildes/ffxiv.jpg" width="300" height="200" alt="FFXIV"></a>	 
-		</div>
-
-		<div class="col-md-3">
-			<a class="fancybox" rel="group" href="./bildes/neverwinter.jpg" title="NEVERWINTER">
- 	 		<img src="./bildes/neverwinter.jpg" width="300" height="200" alt="NW"></a>	 
-		</div>
-
-		<div class="col-md-3">
-			<a class="fancybox" rel="group" href="./bildes/c9.jpg" title="C9">
- 	 		<img src="./bildes/c9.jpg" width="300" height="200" alt="C9"></a>	 
-		</div>
-
-		<div class="col-md-3">
-			<a class="fancybox" rel="group" href="./bildes/skyforge.jpg" title="SKYFORGE">
- 	 		<img src="./bildes/skyforge.jpg" width="300" height="200" alt="SF"></a>	 
-		</div>
-
-		<div class="col-md-3">
-			<a class="fancybox" rel="group" href="./bildes/bd.jpg" title="BLACK DESERT">
- 	 		<img src="./bildes/bd.jpg" width="300" height="200" alt="BD"></a>	 
-		</div>
-	</div>
 </div>
+
+</div>
+
+</div>
+
+
+
 
 	<nav class = "navbar navbar-default navbar-fixed-bottom">
 		<div class = "container">
@@ -178,4 +168,4 @@
                 </div>
              </div>
  </div>
-</body>		
+</body>
