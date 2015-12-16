@@ -53,7 +53,7 @@
 
 	<div class = "col-md-6">
 		<div class = "caption">
-			<p align = "right"><img src = "http://puu.sh/lTZkD/d9834c141d.jpg" width = "250px" height = "250px"> </p>
+			<p align = "right"><img src = "./bildes/kontakti.jpg" width = "250px" height = "250px"> </p>
 		</div>
 	</div>	
 
@@ -65,11 +65,46 @@
 
 
 
-<nav class = "navbar navbar-default navbar-fixed-bottom">
+	<nav class = "navbar navbar-default navbar-fixed-bottom">
 		<div class = "container">
 
 		<p class = "navbar-text"><font color = "black"> Artūrs Ēķis D3-1 </font></p>
-
+		<a href = "#logins" data-toggle = "modal" class="btn btn-primary navbar-btn navbar-right">Pieslēgties</a>
 		</div>
-	</nav>	
+	</nav>
+
+ <div id = "logins"class="modal fade" tabindex="-1" role="dialog">
+             <div class="modal-dialog">
+                <div class="modal-content">
+                 <form class = "form-horizontal" method = "post">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Pieslēgšanās mājaslapā:</h4>
+                  </div>
+                <div class="modal-body">
+
+                     <div class = "form-group">
+                        <label class = "col-lg-2 control-label">E-pasts: </label>
+                        <div class = "col-lg-10">
+                            <input type = "email" class = "form-control" id = "piesl-epasts" placeholder = "Latvija@inbox.lv">  
+                        </div>
+                     </div>
+
+                     <div class = "form-group">
+                        <label class = "col-lg-2 control-label">Parole: </label>
+                        <div class = "col-lg-10">
+                            <input type = "password" class = "form-control" id = "piesl-parole" placeholder = "parole">  
+                        </div>
+
+                     </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Aizvērt</button>
+                    <button type="submit" class="btn btn-primary">Pieslēgties</button>
+                </div>
+                </form>
+                </div>
+             </div>
+ </div>
 </body>		 

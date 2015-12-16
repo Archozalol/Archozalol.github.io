@@ -17,6 +17,7 @@ $(document).ready(function() {
 	$("#testafons").hide();
 	$("#tests2").hide();
 	$("#testafons2").hide();
+	$("#beigttestu").hide();
 
     $("#sakttestu").click(function(){ 
     	$("#parbaude").hide();
@@ -26,6 +27,17 @@ $(document).ready(function() {
     	$("#tests2").show();
     	$("#testafons2").show();
     	$("#infofons").hide();
+    	$("#beigttestu").show();
+    });
+
+    $("#beigttestu").click(function(){
+
+    	alert("Paldies!");
+    	$("#parbaude").show();
+    	$("#infofons").show();
+    	$("#testafons").hide();
+    	$("#tests").hide();
+    	$("#sakttestu").show();
     });
 });
 </script>
@@ -85,7 +97,7 @@ $(document).ready(function() {
 		<div class = "jumbotron" id = "testafons">
 			<div class = "container" id = "tests">
 
-			<h2 align = "middle"> Anketa par MMO/MMORPG </h2>
+			<h2 align = "middle">Anketa par MMO/MMORPG </h2>
 
 			<h3>Vai jūs esat spēlējis MMO/MMORPG spēles?</h3>
 			<div class = "row">
@@ -237,9 +249,11 @@ $(document).ready(function() {
 							<option>Skyforge</option>
 							<option>Black Desert</option>
 						</select>
-					</div>
+					</div> 
+					<button type="button" class="btn btn-primary" id = "beigttestu">Beigt testu</button>	
 		</div>
-	</div>			
+	</div>	
+</div>		
 
 
 
@@ -248,7 +262,43 @@ $(document).ready(function() {
 		<div class = "container">
 
 		<p class = "navbar-text"><font color = "black"> Artūrs Ēķis D3-1 </font></p>
-
+		<a href = "#logins" data-toggle = "modal" class="btn btn-primary navbar-btn navbar-right">Pieslēgties</a>
 		</div>
-	</nav>		
+	</nav>
+
+ <div id = "logins"class="modal fade" tabindex="-1" role="dialog">
+             <div class="modal-dialog">
+                <div class="modal-content">
+                 <form class = "form-horizontal" method = "post">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Pieslēgšanās mājaslapā:</h4>
+                  </div>
+                <div class="modal-body">
+
+                     <div class = "form-group">
+                        <label class = "col-lg-2 control-label">E-pasts: </label>
+                        <div class = "col-lg-10">
+                            <input type = "email" class = "form-control" id = "piesl-epasts" placeholder = "Latvija@inbox.lv">  
+                        </div>
+                     </div>
+
+                     <div class = "form-group">
+                        <label class = "col-lg-2 control-label">Parole: </label>
+                        <div class = "col-lg-10">
+                            <input type = "password" class = "form-control" id = "piesl-parole" placeholder = "parole">  
+                        </div>
+
+                     </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Aizvērt</button>
+                    <button type="submit" class="btn btn-primary">Pieslēgties</button>
+                </div>
+                </form>
+                </div>
+             </div>
+ </div>
+
 </body>
